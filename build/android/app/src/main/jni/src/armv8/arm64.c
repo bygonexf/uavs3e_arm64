@@ -50,6 +50,9 @@ void uavs3e_funs_init_arm64()
 
     uavs3e_funs_handle.alf      = uavs3e_alf_filter_block_arm64;
 
+    uavs3e_funs_handle.sao = uavs3e_sao_on_lcu_arm64;
+    //todo uavs3e_funs_handle.sao_stat
+
 #else
     //uavs3e_funs_handle.trans_dct2[1][1] = uavs3e_trans_dct2_w4_h4_arm64;
     //uavs3e_funs_handle.trans_dct2[1][2] = uavs3e_trans_dct2_w4_h8_arm64;
